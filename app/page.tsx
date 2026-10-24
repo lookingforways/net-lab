@@ -3,11 +3,11 @@ import { ArrowRight, AlertTriangle, BookOpen, GitBranch, Network, Terminal } fro
 import NetworkShell from '@/components/network-shell'
 
 const cards = [
-  ['/commands', 'Comandos IOS', 'Más de 60 comandos organizados por verificación, interfaces, VLAN, routing, ACL, NAT y servicios.', Terminal],
-  ['/segmentation', 'Segmentación', 'Diseña VLANs, trunks y gateways con una topología clara.', Network],
-  ['/workflows', 'Laboratorio de flujos', 'Asigna IPs a los dispositivos y genera el bloque IOS listo para copiar.', GitBranch],
-  ['/troubleshooting', 'Errores y diagnóstico', 'Sigue una ruta de diagnóstico desde la capa física hasta los servicios.', AlertTriangle],
-  ['/glossary', 'Glosario', 'Consulta conceptos esenciales de redes y Cisco IOS.', BookOpen]
+  ['/commands/', 'Comandos IOS', 'Más de 60 comandos organizados por verificación, interfaces, VLAN, routing, ACL, NAT y servicios.', Terminal],
+  ['/segmentation/', 'Segmentación', 'Diseña VLANs, trunks y gateways con una topología clara.', Network],
+  ['/workflows/', 'Laboratorio de flujos', 'Asigna IPs a los dispositivos y genera el bloque IOS listo para copiar.', GitBranch],
+  ['/troubleshooting/', 'Errores y diagnóstico', 'Sigue una ruta de diagnóstico desde la capa física hasta los servicios.', AlertTriangle],
+  ['/glossary/', 'Glosario', 'Consulta conceptos esenciales de redes y Cisco IOS.', BookOpen]
 ]
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
 
         <div className="mt-7 flex flex-wrap gap-3">
           <Link
-            href="/workflows"
+            href="/workflows/"
             className="inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-[#071321]"
           >
             Abrir laboratorio
@@ -37,7 +37,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/commands"
+            href="/commands/"
             className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-4 py-2.5 text-sm font-semibold"
           >
             Explorar comandos

@@ -7,12 +7,12 @@ import { AlertTriangle, BookOpen, GitBranch, LayoutDashboard, Menu, Network, Shi
 
 const items = [
   ['/', 'Resumen', LayoutDashboard],
-  ['/commands', 'Comandos IOS', Terminal],
-  ['/segmentation', 'Segmentación', Network],
-  ['/workflows', 'Laboratorio IP', GitBranch],
-  ['/security', 'Seguridad', ShieldCheck],
-  ['/troubleshooting', 'Diagnóstico', AlertTriangle],
-  ['/glossary', 'Glosario', BookOpen],
+  ['/commands/', 'Comandos IOS', Terminal],
+  ['/segmentation/', 'Segmentación', Network],
+  ['/workflows/', 'Laboratorio IP', GitBranch],
+  ['/security/', 'Seguridad', ShieldCheck],
+  ['/troubleshooting/', 'Diagnóstico', AlertTriangle],
+  ['/glossary/', 'Glosario', BookOpen],
 ] as const
 
 export default function NetworkShell({ children }: { children: React.ReactNode }) {
@@ -35,6 +35,7 @@ export default function NetworkShell({ children }: { children: React.ReactNode }
         </div>
       </header>
       <main><div className="mx-auto max-w-[1400px] px-5 py-8 md:px-8 md:py-12">{children}</div></main>
+      <footer className="border-t border-slate-200 bg-white"><div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-2 px-5 py-5 text-xs text-slate-500 md:px-8"><span>NetLab · Entorno de práctica</span><span>Dev by Jesús Sanabria · Estudiante de ciberseguridad en FUSALMO</span></div></footer>
     </div>
   )
 }

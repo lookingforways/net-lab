@@ -1,11 +1,10 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'NetLab · Aula de redes',
   description: 'Guía educativa para aprender comandos Cisco IOS, segmentación, flujos de trabajo y troubleshooting de redes.',
-  generator: 'v0.app',
+  generator: 'NetLab — Jesús Sanabria, Estudiante de ciberseguridad en FUSALMO',
   icons: {
     icon: [
       {
@@ -42,7 +41,6 @@ export default function RootLayout({
     <html lang="es">
       <body className="antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
