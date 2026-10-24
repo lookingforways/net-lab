@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'NetLab · Aula de redes',
-  description: 'Guía educativa para aprender comandos Cisco IOS, segmentación, flujos de trabajo y troubleshooting de redes.',
+  description: 'Guía educativa para aprender comandos Cisco IOS, segmentación, flujos de trabajo y diagnóstico de redes.',
   generator: 'NetLab — Jesús Sanabria, Estudiante de ciberseguridad en FUSALMO',
   icons: {
     icon: [

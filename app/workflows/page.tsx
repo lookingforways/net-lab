@@ -22,7 +22,7 @@ const labs: LabInfo[] = [
   { id: 'ospf', title: 'OSPF multiárea', detail: 'Diseña áreas y vecinos', icon: GitBranch },
   { id: 'vrf', title: 'VRF-Lite', detail: 'Aísla tablas de routing', icon: Shield },
   { id: 'qos', title: 'QoS básico', detail: 'Prioriza voz y datos', icon: Play },
-  { id: 'troubleshoot', title: 'Troubleshooting', detail: 'Diagnostica por capas', icon: Wrench },
+  { id: 'troubleshoot', title: 'Solución de problemas', detail: 'Diagnostica por capas', icon: Wrench },
 ]
 
 const inputClass = 'mt-2 h-11 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-100'
